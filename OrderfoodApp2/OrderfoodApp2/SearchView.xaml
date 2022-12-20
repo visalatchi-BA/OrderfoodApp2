@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OrderfoodApp2.SearchView"
+              xmlns:controls="clr-namespace:OrderfoodApp2">
+    <ContentPage.Content>
+
+        <Grid Margin="20,0,20,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Column="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="30"/>
+
+                </Grid.ColumnDefinitions>
+                <Image Source="Arrow1.png" HeightRequest="20" WidthRequest="20" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Start"></Image>
+                <Label AbsoluteLayout.LayoutBounds="0,0,1,1" Grid.Column="1" Text="Start" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Style="{StaticResource LabelTitleStyle}"/>
+                <Image Source="Filter.png" HeightRequest="20" WidthRequest="20" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Start" Grid.Column="2"></Image>
+              
+                <Image Source="Food.png" x:Name="CartName" HeightRequest="20" WidthRequest="20" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Start" Grid.Column="3"></Image>
+                
+            </Grid>
+
+            <Frame IsClippedToBounds="True" CornerRadius="25" HasShadow="True" HeightRequest="60" Padding="0" Grid.Row="1" Margin="0,10,0,10">
+                <controls:CustomEntry Placeholder="Search" HeightRequest="30"  EntryCornerRadius="25" WidthRequest="50" Margin="20,0,20,0" BackgroundColor="White"></controls:CustomEntry>
+            </Frame>
+            <ScrollView Grid.Row="2" Orientation="Horizontal" Margin="0,5,0,10" HeightRequest="50">
+                <StackLayout Orientation="Horizontal">
+                    <Frame HeightRequest="50" CornerRadius="25" Padding="0,0,5,0" HasShadow="True" Margin="0,0,15,0" BackgroundColor="{StaticResource MainColor}" IsClippedToBounds="True" HorizontalOptions="Start">
+                        <StackLayout Orientation="Horizontal">
+                            <Frame HeightRequest="50" WidthRequest="50" Padding="0"  CornerRadius="25" HasShadow="False">
+                                <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+
+                                    <Image Source="Pizza.png" HeightRequest="40" WidthRequest="40" VerticalOptions="Center" Aspect="AspectFit"/>
+                                </StackLayout>
+                            </Frame>
+                            <Label Text="Food" TextColor="black" Style="{StaticResource LabelDefaultStyle}" VerticalTextAlignment="Center" FontSize="15"/>
+                        </StackLayout>
+                    </Frame>
+
+
+
+                    <Frame HeightRequest="50" CornerRadius="25" Padding="0,0,5,0" HasShadow="True" Margin="0,0,15,0" BackgroundColor="{StaticResource MainColor}" IsClippedToBounds="True" HorizontalOptions="Start">
+                        <StackLayout Orientation="Horizontal">
+                            <Frame HeightRequest="50" WidthRequest="50" Padding="0"  CornerRadius="25" HasShadow="False">
+                                <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+
+                                    <Image Source="Pizza.png" HeightRequest="40" WidthRequest="40" VerticalOptions="Center" Aspect="AspectFit"/>
+                                </StackLayout>
+                            </Frame>
+                            <Label Text="Food" TextColor="black" Style="{StaticResource LabelDefaultStyle}" VerticalTextAlignment="Center" FontSize="15"/>
+                        </StackLayout>
+                    </Frame>
+
+
+                    <Frame HeightRequest="50" CornerRadius="25" Padding="0,0,5,0" HasShadow="True" Margin="0,0,15,0" BackgroundColor="{StaticResource MainColor}" IsClippedToBounds="True" HorizontalOptions="Start">
+                        <StackLayout Orientation="Horizontal">
+                            <Frame HeightRequest="50" WidthRequest="50" Padding="0"  CornerRadius="25" HasShadow="False">
+                                <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+
+                                    <Image Source="Pizza.png" HeightRequest="40" WidthRequest="40" VerticalOptions="Center" Aspect="AspectFit"/>
+                                </StackLayout>
+                            </Frame>
+                            <Label Text="Food" TextColor="black" Style="{StaticResource LabelDefaultStyle}" VerticalTextAlignment="Center" FontSize="15"/>
+                        </StackLayout>
+                    </Frame>
+
+
+                    <Frame HeightRequest="50" CornerRadius="25" Padding="0,0,5,0" HasShadow="True" Margin="0,0,15,0" BackgroundColor="{StaticResource MainColor}" IsClippedToBounds="True" HorizontalOptions="Start">
+                        <StackLayout Orientation="Horizontal">
+                            <Frame HeightRequest="50" WidthRequest="50" Padding="0"  CornerRadius="25" HasShadow="False">
+                                <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+
+                                    <Image Source="Pizza.png" HeightRequest="40" WidthRequest="40" VerticalOptions="Center" Aspect="AspectFit"/>
+                                </StackLayout>
+                            </Frame>
+                            <Label Text="Food" TextColor="black" Style="{StaticResource LabelDefaultStyle}" VerticalTextAlignment="Center" FontSize="15"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+            <ScrollView Grid.Row="3">
+                <StackLayout>
+                    <Grid VerticalOptions="Start" ColumnSpacing="15" Margin="0,15,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="230"/>
+                        </Grid.RowDefinitions>
+                        
+                        <Frame CornerRadius="5"  HasShadow="true" Padding="0" IsClippedToBounds="True" Grid.Column="0">
+                            <StackLayout Orientation="Vertical" Margin="0,10,10,10">
+                                <Frame Padding="0" HasShadow="false" IsClippedToBounds="true" CornerRadius="10">
+                                    <Image Source="Kunafa.jpg"></Image>
+                                </Frame>
+                                <Label Text="Kunafa" Style="{StaticResource LabelTitleStyle}" TextColor="{StaticResource TextColor}" Margin="5,0,5,0"/>
+                                <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" BackgroundColor="{StaticResource BgColor}"/>
+                                <StackLayout Orientation="Horizontal" Margin="5,0,5,0">
+
+                                    <Label Text="Rs.380" VerticalTextAlignment="End" Style="{StaticResource LabelWelcomeStyle}" HorizontalOptions="Start" FontSize="15"/>
+                                    <Image Source="plus.jpg" WidthRequest="20" HeightRequest="20" HorizontalOptions="EndAndExpand" x:Name="ImageName">
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1"></TapGestureRecognizer>  
+                                        </Image.GestureRecognizers>
+                                    </Image>
+
+                                </StackLayout>
+
+                            </StackLayout>
+                        </Frame>
+
+
+
+                        <Frame CornerRadius="5"  HasShadow="true" Padding="0" IsClippedToBounds="True"  Grid.Column="1" >
+                            <StackLayout Orientation="Vertical" Margin="0,10,10,10">
+                                <Frame Padding="0" HasShadow="false" IsClippedToBounds="true" CornerRadius="10">
+                                    <Image Source="Brownie.jpg" ></Image>
+                                </Frame>
+                                <Label Text="Brownie" Style="{StaticResource LabelTitleStyle}" TextColor="{StaticResource TextColor}" Margin="5,0,5,0"/>
+                                <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" BackgroundColor="{StaticResource BgColor}"/>
+                                <StackLayout Orientation="Horizontal" Margin="5,0,5,0">
+
+                                    <Label Text="Rs.140" VerticalTextAlignment="center" Style="{StaticResource LabelWelcomeStyle}" HorizontalOptions="Center" FontSize="15"/>
+                                    <Image Source="plus.jpg" WidthRequest="20" HeightRequest="20" HorizontalOptions="EndAndExpand">
+                                        
+                                    </Image>
+
+                                </StackLayout>
+
+                            </StackLayout>
+                        </Frame>
+                        
+                    </Grid>
+
+
+
+                    <Grid VerticalOptions="Start" ColumnSpacing="15" Margin="0,15,0,0" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions >
+                            <RowDefinition Height="230"/>
+                        </Grid.RowDefinitions>
+                        <Frame CornerRadius="5"  HasShadow="true" Padding="0" IsClippedToBounds="True"  Grid.Column="0" >
+                            <StackLayout Orientation="Vertical" Margin="0,10,10,10" >
+                                <Frame Padding="0" HasShadow="false" IsClippedToBounds="true" CornerRadius="10">
+                                    <Image Source="Baklava.png"></Image>
+                                </Frame>
+                                <Label Text="Baklava" Style="{StaticResource LabelTitleStyle}" TextColor="{StaticResource TextColor}" Margin="5,0,5,0"/>
+                                <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" BackgroundColor="{StaticResource BgColor}"/>
+                                <StackLayout Orientation="Horizontal" Margin="5,0,5,0">
+
+                                    <Label Text="Rs.250" VerticalTextAlignment="Center" Style="{StaticResource LabelWelcomeStyle}" HorizontalOptions="Center" FontSize="15"/>
+                                    
+                                    <Image Source="plus.jpg" WidthRequest="20" HeightRequest="20" HorizontalOptions="EndAndExpand"/>
+
+                                </StackLayout>
+
+                            </StackLayout>
+                        </Frame>
+
+
+
+                        <Frame CornerRadius="5"  HasShadow="true" Padding="0" IsClippedToBounds="True" Grid.Column="1">
+                            <StackLayout Orientation="Vertical" Margin="0,10,10,10">
+                                <Frame Padding="0" HasShadow="false" IsClippedToBounds="true" CornerRadius="10">
+                                    <Image Source="Donut.jpg"></Image>
+                                </Frame>
+                                <Label Text="Donuts" Style="{StaticResource LabelTitleStyle}" TextColor="{StaticResource TextColor}" Margin="5,0,5,0"/>
+                                <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" BackgroundColor="{StaticResource BgColor}"/>
+                                <StackLayout Orientation="Horizontal" Margin="5,0,5,0">
+
+                                    <Label Text="Rs.300" VerticalTextAlignment="center" Style="{StaticResource LabelWelcomeStyle}" HorizontalOptions="Center" FontSize="15"/>
+                                    <Image Source="plus.jpg" WidthRequest="20" HeightRequest="20" HorizontalOptions="EndAndExpand"/>
+
+                                </StackLayout>
+
+                            </StackLayout>
+                        </Frame>
+
+                    </Grid>
+
+
+
+
+
+                </StackLayout>
+
+
+            </ScrollView>
+                
+
+        </Grid>
+        
+        
+        
+    </ContentPage.Content>
+</ContentPage>
